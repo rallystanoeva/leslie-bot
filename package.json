@@ -1,7 +1,9 @@
 {
   "name": "leslie-bot",
   "version": "1.0.0",
-  "description": "",
+  "description":
+    "A bot that tweets inspirational quotes by Leslie Knope from Parks and Recreation show daily.",
+  "homepage": "https://twitter.com/knopesquotes",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
