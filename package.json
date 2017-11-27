@@ -1,0 +1,24 @@
+{
+  "name": "leslie-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":
+      "now -e CONSUMER_KEY=@consumerkey -e CONSUMER_SECRET=@consumersecret -e ACCESS_TOKEN=@accesstoken -e ACCESS_TOKEN_SECRET=@accesstokensecret -e CALLBACK_URL=@callbackurl"
+  },
+  "author": "Pablo Enrici <pabloenrici@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "node-schedule": "^1.2.5",
+    "twitter-node-client": "0.0.6"
+  },
+  "now": {
+    "alias": "leslie-bot",
+    "files": ["src", "index.js"]
+  }
+}
